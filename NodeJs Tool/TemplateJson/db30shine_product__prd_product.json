@@ -1,0 +1,1 @@
+{"template":"db30shine_product__prd_product","settings":{},"mappings":{"_default_":{"_all":{"enabled":true},"properties":{"uid":{"type":"keyword","fields":{"keyword":{"ignore_above":256,"type":"keyword"}}},"brand_uid":{"type":"keyword","fields":{"keyword":{"ignore_above":256,"type":"keyword"}}}}}}}

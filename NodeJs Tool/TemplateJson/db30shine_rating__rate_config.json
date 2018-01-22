@@ -1,0 +1,1 @@
+{"template":"db30shine_rating__rate_config","settings":{},"mappings":{"_default_":{"_all":{"enabled":true},"properties":{"uid":{"type":"keyword","fields":{"keyword":{"ignore_above":256,"type":"keyword"}}},"object_uid":{"type":"keyword","fields":{"keyword":{"ignore_above":256,"type":"keyword"}}}}}}}

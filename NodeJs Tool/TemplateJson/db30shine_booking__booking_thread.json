@@ -1,0 +1,1 @@
+{"template":"db30shine_booking__booking_thread","settings":{},"mappings":{"_default_":{"_all":{"enabled":true},"properties":{"uid":{"type":"keyword","fields":{"keyword":{"ignore_above":256,"type":"keyword"}}}}}}}
