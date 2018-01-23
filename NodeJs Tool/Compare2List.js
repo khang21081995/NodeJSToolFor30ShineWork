@@ -1,40 +1,31 @@
 var List1 = `
-id
-uid
-parent_uid
-group_type_uid
+id 
+uid 
+level_uid
+department_uid 
 name
-description
-thumb_images
-order_number
+description 
 is_active
-is_delete
-create_at
-modify_at
+is_delete 
 create_time
-modify_time
-tmp_product_uid
+modify_time 
+create_at 
+modify_at
 `;
 
 var List2 = `
 id
-uid 
+uid
+level_uid
+department_uid
 name
-description 
-
+description
 is_active
-modify_time
-create_time
 is_delete
-images
-thumb_images
-order_number 
-parent_uid 
-group_type_uid 
-
-modify_at 
+create_time
+modify_time
 create_at
-
+modify_at
 `;
 
 var tempList1 = List1.split(' ').join('').split("\n");
