@@ -6,6 +6,7 @@ var nameSpaceES = "API30Shine.Models.ESModels";
 var nameSpaceWorker = "ThirtyShine.Conductor.Model";
 //var ignoreCol = ["uid", "id", "is_delete", "create_time", "create_at", "modify_time", "modify_at"];
 var ignoreCol = [];
+var ignoreCol2 = ["create_at", "modify_at"];
 
 var con = mysql.createConnection({
     host: "192.168.1.12",
@@ -89,7 +90,9 @@ var getClassContentByTableName = function (con, tableName, dbName) {
                 var tm = "\t\tpublic " + cSharpType + " " + toCamel(field) + " {get; set;} \r\n";
                 var tm2 = "\t\tpublic " + cSharpWorkerType + " " + toCamel(field) + " {get; set;}\r\n";
 
-                ret3 += "\n\t\t[Text(Name=\"" + field + "\")]\r\n\t\t[JsonProperty(\"" + field + "\")]\r\n" + tm2;
+                if (!(ignoreCol2.indexOf(field.toLowerCase()) >= 0))
+                    ret3 += "\n\t\t[Text(Name=\"" + field + "\")]\r\n\t\t[JsonProperty(\"" + field + "\")]\r\n" + tm2;
+
                 if (ignoreCol.indexOf(field.toLowerCase()) >= 0) {
                     return;
                 }
