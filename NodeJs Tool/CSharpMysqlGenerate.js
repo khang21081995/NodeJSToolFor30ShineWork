@@ -36,6 +36,9 @@ var getCsharpType = function (input) {
     if (input.includes("float")) {
         return "float";
     }
+    if (input.includes("double")) {
+        return "double";
+    }
     if (input.includes("bigint")) {
         return "long";
     }
@@ -59,6 +62,9 @@ var getCsharpTypeWorker = function (input) {
     }
     if (input.includes("float")) {
         return "float?";
+    }
+    if (input.includes("double")) {
+        return "double?";
     }
     if (input.includes("bigint")) {
         return "long?";
